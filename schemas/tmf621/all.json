@@ -1,0 +1,97 @@
+{
+  "oneOf": [
+    {
+      "$ref": "_definitions.json#/definitions/Attachment"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AttachmentRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AttachmentRefOrValue"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ChannelRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EntityRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Note"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Quantity"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedEntity"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedParty"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/StatusChange"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TimePeriod"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicket"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicket_Create"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicket_Update"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketRelationship"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketStatusType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EventSubscription"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EventSubscriptionInput"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketCreateEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketCreateEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketAttributeValueChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketAttributeValueChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketStatusChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketStatusChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketDeleteEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketDeleteEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketResolvedEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketResolvedEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketInformationRequiredEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TroubleTicketInformationRequiredEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Error"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "type": "object",
+  "description": "A product offering procured by a customer or other interested party playing a party role. A product is realized as one or more service(s) and / or resource(s).",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier of the product"
+    },
+    "href": {
+      "type": "string",
+      "description": "Reference of the product"
+    },
+    "description": {
+      "type": "string",
+      "description": "Is the description of the product. It could be copied from the description of the Product Offering."
+    },
+    "isBundle": {
+      "type": "boolean",
+      "description": "If true, the product is a ProductBundle which is an instantiation of a BundledProductOffering. If false, the product is a ProductComponent which is an instantiation of a SimpleProductOffering."
+    },
+    "isCustomerVisible": {
+      "type": "boolean",
+      "description": "If true, the product is visible by the customer."
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the product. It could be the same as the name of the product offering"
+    },
+    "orderDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Is the date when the product was ordered"
+    },
+    "productSerialNumber": {
+      "type": "string",
+      "description": "Is the serial number for the product. This is typically applicable to tangible products e.g. Broadband Router."
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Is the date from which the product starts"
+    },
+    "terminationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Is the date when the product was terminated"
+    },
+    "agreement": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/AgreementItemRef"
+      }
+    },
+    "billingAccount": {
+      "$ref": "_definitions.json#/definitions/BillingAccountRef"
+    },
+    "place": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/RelatedPlaceRefOrValue"
+      }
+    },
+    "product": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ProductRefOrValue"
+      }
+    },
+    "productCharacteristic": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/Characteristic"
+      }
+    },
+    "productOffering": {
+      "$ref": "_definitions.json#/definitions/ProductOfferingRef"
+    },
+    "productOrderItem": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/RelatedProductOrderItem"
+      }
+    },
+    "productPrice": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ProductPrice"
+      }
+    },
+    "productRelationship": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ProductRelationship"
+      }
+    },
+    "productSpecification": {
+      "$ref": "_definitions.json#/definitions/ProductSpecificationRef"
+    },
+    "productTerm": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ProductTerm"
+      }
+    },
+    "realizingResource": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ResourceRef"
+      }
+    },
+    "realizingService": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ServiceRef"
+      }
+    },
+    "relatedParty": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/RelatedParty"
+      }
+    },
+    "status": {
+      "$ref": "_definitions.json#/definitions/ProductStatusType",
+      "description": "Is the lifecycle status of the product."
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

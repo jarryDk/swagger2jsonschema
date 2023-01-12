@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "description": "The event data structure",
+  "properties": {
+    "cancelProductOrder": {
+      "description": "The involved resource data for the event",
+      "$ref": "_definitions.json#/definitions/CancelProductOrder"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

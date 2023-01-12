@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "description": "Holds the status notification reasons and associated date the status changed, populated by the server",
+  "properties": {
+    "changeDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time the status changed."
+    },
+    "changeReason": {
+      "type": "string",
+      "description": "The reason why the status changed."
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the trouble ticket"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

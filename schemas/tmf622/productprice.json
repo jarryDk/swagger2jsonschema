@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "description": "An amount, usually of money, that represents the actual price paid by a Customer for a purchase, a rent or a lease of a Product. The price is valid for a defined period of time.",
+  "required": [
+    "price",
+    "priceType"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A narrative that explains in detail the semantics of this product price."
+    },
+    "name": {
+      "type": "string",
+      "description": "A short descriptive name such as \"Subscription price\"."
+    },
+    "priceType": {
+      "type": "string",
+      "description": "A category that describes the price, such as recurring, discount, allowance, penalty, and so forth."
+    },
+    "recurringChargePeriod": {
+      "type": "string",
+      "description": "Could be month, week..."
+    },
+    "unitOfMeasure": {
+      "type": "string",
+      "description": "Could be minutes, GB..."
+    },
+    "billingAccount": {
+      "$ref": "_definitions.json#/definitions/BillingAccountRef"
+    },
+    "price": {
+      "$ref": "_definitions.json#/definitions/Price"
+    },
+    "productOfferingPrice": {
+      "$ref": "_definitions.json#/definitions/ProductOfferingPriceRef"
+    },
+    "productPriceAlteration": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/PriceAlteration"
+      }
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

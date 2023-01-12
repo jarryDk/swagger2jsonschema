@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "description": "Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.",
+  "properties": {
+    "percentage": {
+      "type": "number",
+      "format": "float",
+      "description": "Percentage to apply for ProdOfferPriceAlteration"
+    },
+    "taxRate": {
+      "type": "number",
+      "format": "float",
+      "description": "Tax rate"
+    },
+    "dutyFreeAmount": {
+      "$ref": "_definitions.json#/definitions/Money",
+      "description": "All taxes excluded amount (expressed in the given currency)"
+    },
+    "taxIncludedAmount": {
+      "$ref": "_definitions.json#/definitions/Money",
+      "description": "All taxes included amount (expressed in the given currency)"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

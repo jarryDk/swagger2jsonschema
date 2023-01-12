@@ -2,9 +2,10 @@
 
 == Requeriment
 
-.install pip
+.install pip on Fedora
 [source,bash]
 ----
+sudo dnf install python3-pip
 ----
 
 .install openapi2jsonschema
@@ -18,13 +19,13 @@ pip install openapi2jsonschema
 .TMF621
 [source,bash]
 ----
-openapi2jsonschema --stand-alone https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF622-ProductOrder-v4.0.0.swagger.json
+openapi2jsonschema -o schemas/tmf622 https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF622-ProductOrder-v4.0.0.swagger.json
 ----
 
 .TMF622
 [source,bash]
 ----
-openapi2jsonschema --stand-alone https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF621-TroubleTicket-v4.0.0.swagger.json
+openapi2jsonschema  -o schemas/tmf621 https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF621-TroubleTicket-v4.0.0.swagger.json
 ----
 
 

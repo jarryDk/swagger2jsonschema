@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "description": "An amount in a given unit",
+  "properties": {
+    "amount": {
+      "default": 1,
+      "type": "number",
+      "format": "float",
+      "description": "Numeric value in a given unit"
+    },
+    "units": {
+      "type": "string",
+      "description": "Unit"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

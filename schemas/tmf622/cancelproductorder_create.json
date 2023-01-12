@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "description": "Request for cancellation an existing product order\nSkipped properties: id,href,state,effectiveCancellationDate",
+  "required": [
+    "productOrder"
+  ],
+  "properties": {
+    "cancellationReason": {
+      "type": "string",
+      "description": "Reason why the order is cancelled."
+    },
+    "requestedCancellationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date when the submitter wants the order to be cancelled"
+    },
+    "productOrder": {
+      "$ref": "_definitions.json#/definitions/ProductOrderRef"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "description": "Request for cancellation an existing product order",
+  "required": [
+    "productOrder"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "id of the cancellation request (this is not an order id)"
+    },
+    "href": {
+      "type": "string",
+      "description": "Hyperlink to access the cancellation request"
+    },
+    "cancellationReason": {
+      "type": "string",
+      "description": "Reason why the order is cancelled."
+    },
+    "effectiveCancellationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date when the order is cancelled."
+    },
+    "requestedCancellationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date when the submitter wants the order to be cancelled"
+    },
+    "productOrder": {
+      "$ref": "_definitions.json#/definitions/ProductOrderRef"
+    },
+    "state": {
+      "$ref": "_definitions.json#/definitions/TaskStateType",
+      "description": "Tracks the lifecycle status of the cancellation request, such as Acknowledged, Rejected, InProgress, Pending and so on."
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

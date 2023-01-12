@@ -1,0 +1,217 @@
+{
+  "oneOf": [
+    {
+      "$ref": "_definitions.json#/definitions/AgreementItemRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AgreementRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Any"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/BillingAccountRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelOrder"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrder"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrder_Create"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Characteristic"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EntityRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Money"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Note"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/OrderItemActionType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/OrderItemRelationship"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/OrderPrice"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/OrderTerm"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/PaymentRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Place"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/PlaceRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Price"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/PriceAlteration"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Product"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOfferingPriceRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOfferingQualificationItemRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOfferingQualificationRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOfferingRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrder"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrder_Create"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrder_Update"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderItem"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderItemStateType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderStateType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductPrice"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductRefOrValue"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductRelationship"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductSpecificationRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductStatusType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductTerm"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Quantity"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/QuoteItemRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/QuoteRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedChannel"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedParty"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedPlaceRefOrValue"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedProductOrderItem"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ResourceRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ServiceRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TargetProductSchema"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TaskStateType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TimePeriod"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EventSubscription"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EventSubscriptionInput"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderCreateEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderCreateEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderAttributeValueChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderAttributeValueChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderDeleteEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderDeleteEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderStateChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderStateChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderInformationRequiredEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ProductOrderInformationRequiredEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrderCreateEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrderCreateEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrderStateChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrderStateChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrderInformationRequiredEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CancelProductOrderInformationRequiredEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Error"
+    }
+  ]
+}

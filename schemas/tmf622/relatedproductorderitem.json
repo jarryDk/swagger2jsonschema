@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "description": "RelatedProductOrderItem (ProductOrder item) .The product order item which triggered product creation/change/termination.",
+  "required": [
+    "orderItemId",
+    "productOrderId"
+  ],
+  "properties": {
+    "orderItemAction": {
+      "type": "string",
+      "description": "Action of the order item for this product"
+    },
+    "orderItemId": {
+      "type": "string",
+      "description": "Identifier of the order item where the product was managed"
+    },
+    "productOrderHref": {
+      "type": "string",
+      "description": "Reference of the related entity."
+    },
+    "productOrderId": {
+      "type": "string",
+      "description": "Unique identifier of a related entity."
+    },
+    "role": {
+      "type": "string",
+      "description": "role of the product order item for this product"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    },
+    "@referredType": {
+      "type": "string",
+      "description": "The actual type of the target instance when needed for disambiguation."
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

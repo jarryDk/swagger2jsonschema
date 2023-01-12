@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "description": "An identified part of the order. A product order is decomposed into one or more order items.",
+  "required": [
+    "id",
+    "action"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifier of the line item (generally it is a sequence number 01, 02, 03, ...)"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Quantity ordered"
+    },
+    "action": {
+      "$ref": "_definitions.json#/definitions/OrderItemActionType",
+      "description": "The action to be carried out on the Product. Can be: add, modify, delete, noChange"
+    },
+    "appointment": {
+      "$ref": "_definitions.json#/definitions/AppointmentRef"
+    },
+    "billingAccount": {
+      "$ref": "_definitions.json#/definitions/BillingAccountRef"
+    },
+    "itemPrice": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/OrderPrice"
+      }
+    },
+    "itemTerm": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/OrderTerm"
+      }
+    },
+    "itemTotalPrice": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/OrderPrice"
+      }
+    },
+    "payment": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/PaymentRef"
+      }
+    },
+    "product": {
+      "$ref": "_definitions.json#/definitions/ProductRefOrValue"
+    },
+    "productOffering": {
+      "$ref": "_definitions.json#/definitions/ProductOfferingRef"
+    },
+    "productOfferingQualificationItem": {
+      "$ref": "_definitions.json#/definitions/ProductOfferingQualificationItemRef"
+    },
+    "productOrderItem": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ProductOrderItem"
+      }
+    },
+    "productOrderItemRelationship": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/OrderItemRelationship"
+      }
+    },
+    "qualification": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ProductOfferingQualificationRef"
+      }
+    },
+    "quoteItem": {
+      "$ref": "_definitions.json#/definitions/QuoteItemRef"
+    },
+    "state": {
+      "$ref": "_definitions.json#/definitions/ProductOrderItemStateType",
+      "description": "State of the order item : described in the state machine diagram"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

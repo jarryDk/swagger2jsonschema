@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "description": "Represents a relationship between trouble Trouble Tickets",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier of the Trouble Ticket"
+    },
+    "href": {
+      "type": "string",
+      "description": "Reference of the Trouble Ticket"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the Trouble Ticket"
+    },
+    "relationshipType": {
+      "type": "string",
+      "description": "Type of the  Trouble Ticket relationship can be isChiled, dependent etc..."
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

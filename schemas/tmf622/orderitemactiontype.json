@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "description": "action to be performed on the product",
+  "enum": [
+    "add",
+    "modify",
+    "delete",
+    "noChange"
+  ],
+  "$schema": "http://json-schema.org/schema#"
+}

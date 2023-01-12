@@ -1,0 +1,18 @@
+{
+  "type": "string",
+  "description": "Possible values for the state of the order",
+  "enum": [
+    "acknowledged",
+    "rejected",
+    "pending",
+    "held",
+    "inProgress",
+    "cancelled",
+    "completed",
+    "failed",
+    "partial",
+    "assessingCancellation",
+    "pendingCancellation"
+  ],
+  "$schema": "http://json-schema.org/schema#"
+}

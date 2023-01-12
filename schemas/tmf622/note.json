@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "description": "Extra information about a given entity",
+  "required": [
+    "text"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifier of the note within its containing entity (may or may not be globally unique, depending on provider implementation)"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author of the note"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of the note"
+    },
+    "text": {
+      "type": "string",
+      "description": "Text of the note"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}
