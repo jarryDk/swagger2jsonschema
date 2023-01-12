@@ -1,0 +1,53 @@
+= Swagger 2 json schema
+
+== Requeriment
+
+.install pip
+[source,bash]
+----
+----
+
+.install openapi2jsonschema
+[source,bash]
+----
+pip install openapi2jsonschema
+----
+
+== Samples
+
+.TMF621
+[source,bash]
+----
+openapi2jsonschema --stand-alone https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF622-ProductOrder-v4.0.0.swagger.json
+----
+
+.TMF622
+[source,bash]
+----
+openapi2jsonschema --stand-alone https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF621-TroubleTicket-v4.0.0.swagger.json
+----
+
+
+
+== TMF
+
+TMF Open API Table https://projects.tmforum.org/wiki/display/API/Open+API+Table
+
+
+=== TMF688 Event Management API User Guide v4.0.0
+
+https://www.tmforum.org/resources/standard/tmf688-event-management-api-user-guide-v4-0-0/
+
+
+=== TMF621 Trouble Ticket Management API REST Specification
+
+https://www.tmforum.org/resources/specification/tmf621-trouble-ticket-management-api-rest-specification-r19-0-0/
+
+https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF621-TroubleTicket-v4.0.0.swagger.json
+
+
+=== TMF622 Product Ordering API REST Specification
+
+https://www.tmforum.org/resources/specification/tmf622-product-ordering-management-api-rest-specification-r19-0-0/
+
+https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF622-ProductOrder-v4.0.0.swagger.json
