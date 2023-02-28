@@ -30,6 +30,14 @@ openapi2jsonschema  -o schemas/tmf621 https://tmf-open-api-table-documents.s3.eu
 openapi2jsonschema -o schemas/tmf622 https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF622-ProductOrder-v4.0.0.swagger.json
 ----
 
+
+.TMF646 - Appointment Management API
+[source,bash]
+----
+openapi2jsonschema -o schemas/tmf646 https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/4.0.0/swagger/TMF646-Appointment-v4.0.0.swagger.json
+----
+
+
 == TMF
 
 TMF Open API Table https://projects.tmforum.org/wiki/display/API/Open+API+Table

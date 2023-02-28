@@ -1,0 +1,133 @@
+{
+  "oneOf": [
+    {
+      "$ref": "_definitions.json#/definitions/Appointment"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Appointment_Create"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Appointment_Update"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentStateType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Attachment"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AttachmentRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AttachmentRefOrValue"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/CalendarEventRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/ContactMedium"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EntityRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/MediumCharacteristic"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Note"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Place"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/PlaceRef"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Quantity"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedEntity"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedParty"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/RelatedPlaceRefOrValue"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlot"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlot_Create"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlot_Update"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotStateType"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TimePeriod"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/TimeSlot"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EventSubscription"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/EventSubscriptionInput"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentCreateEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentCreateEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentAttributeValueChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentAttributeValueChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentStateChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentStateChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentDeleteEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/AppointmentDeleteEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotCreateEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotCreateEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotAttributeValueChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotAttributeValueChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotStateChangeEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotStateChangeEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotDeleteEvent"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotDeleteEventPayload"
+    },
+    {
+      "$ref": "_definitions.json#/definitions/Error"
+    }
+  ]
+}

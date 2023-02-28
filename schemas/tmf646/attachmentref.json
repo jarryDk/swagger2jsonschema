@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "description": "Attachment reference. An attachment complements the description of an element (for instance a product) through video, pictures",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique-Identifier for this attachment"
+    },
+    "href": {
+      "type": "string",
+      "description": "URL serving as reference for the attachment resource"
+    },
+    "description": {
+      "type": "string",
+      "description": "A narrative text describing the content of the attachment"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the related entity."
+    },
+    "url": {
+      "type": "string",
+      "description": "Link to the attachment media/content"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    },
+    "@referredType": {
+      "type": "string",
+      "description": "The actual type of the target instance when needed for disambiguation."
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "$schema": "http://json-schema.org/schema#"
+}

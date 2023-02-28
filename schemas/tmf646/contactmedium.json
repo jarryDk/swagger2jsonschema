@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "description": "Indicates the contact medium that could be used to contact the party.",
+  "properties": {
+    "mediumType": {
+      "type": "string",
+      "description": "Type of the contact medium, such as: email address, telephone number, postal address"
+    },
+    "preferred": {
+      "type": "boolean",
+      "description": "If true, indicates that is the preferred contact medium"
+    },
+    "characteristic": {
+      "$ref": "_definitions.json#/definitions/MediumCharacteristic",
+      "description": "Any additional characteristic(s) of this contact medium"
+    },
+    "validFor": {
+      "$ref": "_definitions.json#/definitions/TimePeriod",
+      "description": "The time period that the contact medium is valid for"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

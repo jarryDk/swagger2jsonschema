@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "required": [
+    "validFor"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier of the TimeSlot"
+    },
+    "href": {
+      "type": "string",
+      "description": "Reference of the TimeSlot"
+    },
+    "relatedParty": {
+      "$ref": "_definitions.json#/definitions/RelatedParty",
+      "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity."
+    },
+    "validFor": {
+      "$ref": "_definitions.json#/definitions/TimePeriod",
+      "description": "Start date and end date of the timeSlot"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "description": "The event data structure",
+  "properties": {
+    "appointment": {
+      "description": "The involved resource data for the event",
+      "$ref": "_definitions.json#/definitions/Appointment"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

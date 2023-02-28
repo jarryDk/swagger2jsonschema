@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "description": "Valid values for the lifecycle state of the appointment",
+  "enum": [
+    "initialized",
+    "confirmed",
+    "cancelled",
+    "completed",
+    "failed"
+  ],
+  "$schema": "http://json-schema.org/schema#"
+}

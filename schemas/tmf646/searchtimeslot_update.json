@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "description": "This task resource is used to retrieve available time slots. One of this available time slot is after used to create or reschedule an appointment\nSkipped properties: id,href,searchDate,searchResult",
+  "properties": {
+    "availableTimeSlot": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/TimeSlot"
+      }
+    },
+    "relatedEntity": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/RelatedEntity"
+      }
+    },
+    "relatedParty": {
+      "$ref": "_definitions.json#/definitions/RelatedParty",
+      "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity."
+    },
+    "relatedPlace": {
+      "$ref": "_definitions.json#/definitions/RelatedPlaceRefOrValue",
+      "description": "Related place defines (by reference or value) the place where the appointment will take place."
+    },
+    "requestedTimeSlot": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/TimeSlot"
+      }
+    },
+    "status": {
+      "$ref": "_definitions.json#/definitions/SearchTimeSlotStateType"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

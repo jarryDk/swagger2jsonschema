@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "description": "Place reference. Place defines the places where the products are sold or delivered.",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier of the place"
+    },
+    "href": {
+      "type": "string",
+      "description": "Unique reference of the place"
+    },
+    "name": {
+      "type": "string",
+      "description": "A user-friendly name for the place, such as [Paris Store], [London Store], [Main Home]"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "description": "An attachment by value or by reference. For AttachmentRefOrValue, the attribute type,schemaLocation and referredType are related to the contained entity and not to AttchmentRefOrValue itself",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this particular attachment"
+    },
+    "href": {
+      "type": "string",
+      "description": "URI for this Attachment"
+    },
+    "attachmentType": {
+      "type": "string",
+      "description": "Attachment type such as video, picture"
+    },
+    "content": {
+      "type": "string",
+      "description": "The actual contents of the attachment object, if embedded, encoded as base64"
+    },
+    "description": {
+      "type": "string",
+      "description": "A narrative text describing the content of the attachment"
+    },
+    "mimeType": {
+      "type": "string",
+      "description": "Attachment mime type such as extension file for video, picture and document"
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the attachment"
+    },
+    "url": {
+      "type": "string",
+      "description": "Uniform Resource Locator, is a web page address (a subset of URI)"
+    },
+    "size": {
+      "$ref": "_definitions.json#/definitions/Quantity",
+      "description": "The size of the attachment."
+    },
+    "validFor": {
+      "$ref": "_definitions.json#/definitions/TimePeriod",
+      "description": "The period of time for which the attachment is valid"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    },
+    "@referredType": {
+      "type": "string",
+      "description": "The actual type of the target instance when needed for disambiguation."
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

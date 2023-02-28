@@ -1,0 +1,97 @@
+{
+  "type": "object",
+  "description": "An Appointment is an arrangement to do something or meet someone at a particular time, at a place (for face to face appointment) or in a contact medium (for phone appointment).",
+  "required": [
+    "validFor"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier of the appointment"
+    },
+    "href": {
+      "type": "string",
+      "description": "Unique URI used to access to the appointment resource"
+    },
+    "category": {
+      "type": "string",
+      "description": "Business category : intervention for example or to be more precise after SalesIntervention, orderDeliveryIntervention,..."
+    },
+    "creationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Appointment creation date"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short free text describing the appointment"
+    },
+    "externalId": {
+      "type": "string",
+      "description": "External reference known by the customer"
+    },
+    "lastUpdate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of last appointment update"
+    },
+    "attachment": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/AttachmentRefOrValue"
+      }
+    },
+    "calendarEvent": {
+      "$ref": "_definitions.json#/definitions/CalendarEventRef",
+      "description": "A calendar event reference (CalendarEventRef). The appointment is associated with a calendar event (an happening at a point of time) associated to a calendar entry."
+    },
+    "contactMedium": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/ContactMedium"
+      }
+    },
+    "note": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/Note"
+      }
+    },
+    "relatedEntity": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/RelatedEntity"
+      }
+    },
+    "relatedParty": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/RelatedParty"
+      }
+    },
+    "relatedPlace": {
+      "$ref": "_definitions.json#/definitions/RelatedPlaceRefOrValue",
+      "description": "Related place defines (by reference or value) the place where the appointment will take place."
+    },
+    "status": {
+      "$ref": "_definitions.json#/definitions/AppointmentStateType"
+    },
+    "validFor": {
+      "$ref": "_definitions.json#/definitions/TimePeriod"
+    },
+    "@baseType": {
+      "type": "string",
+      "description": "When sub-classing, this defines the super-class"
+    },
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+    },
+    "@type": {
+      "type": "string",
+      "description": "When sub-classing, this defines the sub-class entity name"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}
